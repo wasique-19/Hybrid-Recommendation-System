@@ -1,0 +1,42 @@
+{
+    "day": 22,
+    "title": "API Performance & Load Evaluation",
+    "base_url": "http://127.0.0.1:8000",
+    "configuration": {
+        "requests_per_endpoint": 10,
+        "concurrent_requests": 50,
+        "top_k": 10,
+        "request_timeout_seconds": 60
+    },
+    "overall": {
+        "total_requests": 80,
+        "successful_requests": 80,
+        "failed_requests": 0,
+        "success_rate_percent": 100.0,
+        "average_latency_ms": 19.898834987543523,
+        "median_latency_ms": 17.79764995444566,
+        "minimum_latency_ms": 3.669199999421835,
+        "maximum_latency_ms": 60.48620003275573,
+        "p95_latency_ms": 36.83531999122351
+    },
+    "concurrent_load": {
+        "total_requests": 50,
+        "successful_requests": 50,
+        "failed_requests": 0,
+        "success_rate_percent": 100.0,
+        "duration_seconds": 0.43369399989023805,
+        "throughput_requests_per_second": 115.28865977545068,
+        "average_latency_ms": 221.48398600984365,
+        "median_latency_ms": 226.33430000860244,
+        "p95_latency_ms": 352.81578511931,
+        "p99_latency_ms": 360.24663103278726
+    },
+    "files": {
+        "request_results": "D:\\Hybrid Recommendation System\\evaluation\\day22_api_performance_results.csv",
+        "summary": "D:\\Hybrid Recommendation System\\evaluation\\day22_api_performance_summary.csv",
+        "load_results": "D:\\Hybrid Recommendation System\\evaluation\\day22_concurrent_load_results.csv",
+        "latency_plot": "D:\\Hybrid Recommendation System\\evaluation\\plots\\day22_latency_comparison.png",
+        "throughput_plot": "D:\\Hybrid Recommendation System\\evaluation\\plots\\day22_throughput.png",
+        "success_rate_plot": "D:\\Hybrid Recommendation System\\evaluation\\plots\\day22_success_rate.png"
+    }
+}
