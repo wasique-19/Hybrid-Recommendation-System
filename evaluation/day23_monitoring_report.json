@@ -1,0 +1,91 @@
+{
+    "day": 23,
+    "title": "API Monitoring & Performance Analysis",
+    "generated_at": "2026-09-30T19:11:04.932710",
+    "project_directory": "D:\\Hybrid Recommendation System",
+    "input_files": {
+        "request_results": "D:\\Hybrid Recommendation System\\evaluation\\day22_api_performance_results.csv",
+        "performance_summary": "D:\\Hybrid Recommendation System\\evaluation\\day22_api_performance_summary.csv",
+        "concurrent_results": "D:\\Hybrid Recommendation System\\evaluation\\day22_concurrent_load_results.csv",
+        "json_report": "D:\\Hybrid Recommendation System\\evaluation\\day22_api_performance_report.json"
+    },
+    "overall_metrics": {
+        "total_requests": 80,
+        "successful_requests": 80,
+        "failed_requests": 0,
+        "success_rate_percent": 100.0,
+        "average_latency_ms": 19.8988,
+        "median_latency_ms": 17.7976,
+        "minimum_latency_ms": 3.6692,
+        "maximum_latency_ms": 60.4862,
+        "p95_latency_ms": 36.8353,
+        "p99_latency_ms": 45.7352
+    },
+    "endpoint_health": {
+        "total_endpoints": 8,
+        "healthy": 8,
+        "monitor": 0,
+        "needs_attention": 0,
+        "critical": 0
+    },
+    "performance_score": 92.0405,
+    "latency_distribution": [
+        {
+            "latency_bucket": "under_50ms",
+            "request_count": 79,
+            "percentage": 98.75
+        },
+        {
+            "latency_bucket": "50_to_100ms",
+            "request_count": 1,
+            "percentage": 1.25
+        },
+        {
+            "latency_bucket": "100_to_200ms",
+            "request_count": 0,
+            "percentage": 0.0
+        },
+        {
+            "latency_bucket": "200_to_500ms",
+            "request_count": 0,
+            "percentage": 0.0
+        },
+        {
+            "latency_bucket": "over_500ms",
+            "request_count": 0,
+            "percentage": 0.0
+        }
+    ],
+    "concurrent_load": {
+        "total_requests": 50,
+        "successful_requests": 50,
+        "failed_requests": 0,
+        "success_rate_percent": 100.0,
+        "average_latency_ms": 221.48398600984365,
+        "median_latency_ms": 226.33430000860244,
+        "p95_latency_ms": 352.81578511931,
+        "p99_latency_ms": 360.24663103278726
+    },
+    "throughput_requests_per_second": 115.2887,
+    "slowest_endpoint": "Cold Start Recommendations",
+    "fastest_endpoint": "Movie Details",
+    "highest_p95_endpoint": "Personalized Recommendations",
+    "insights": [
+        "API reliability is high based on the observed request success rate.",
+        "Overall P95 latency is below 50 ms.",
+        "Slowest endpoint by average latency: Cold Start Recommendations (25.78 ms).",
+        "Concurrent load testing achieved a high success rate.",
+        "Concurrent P95 latency was 352.82 ms.",
+        "Observed concurrent throughput: 115.29 requests/sec."
+    ],
+    "output_files": {
+        "endpoint_analysis": "D:\\Hybrid Recommendation System\\evaluation\\day23_endpoint_analysis.csv",
+        "performance_summary": "D:\\Hybrid Recommendation System\\evaluation\\day23_performance_summary.csv",
+        "monitoring_report": "D:\\Hybrid Recommendation System\\evaluation\\day23_monitoring_report.json",
+        "endpoint_latency_plot": "D:\\Hybrid Recommendation System\\evaluation\\plots\\day23_endpoint_latency.png",
+        "latency_distribution_plot": "D:\\Hybrid Recommendation System\\evaluation\\plots\\day23_latency_distribution.png",
+        "success_rate_plot": "D:\\Hybrid Recommendation System\\evaluation\\plots\\day23_success_rate.png",
+        "throughput_plot": "D:\\Hybrid Recommendation System\\evaluation\\plots\\day23_throughput.png",
+        "dashboard_plot": "D:\\Hybrid Recommendation System\\evaluation\\plots\\day23_performance_dashboard.png"
+    }
+}
